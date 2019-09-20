@@ -6,7 +6,8 @@
 # create new env file, update all variables with correct values
 cp .env.dist .env && vim .env
 # run the app
-yarn && yarn dev
+npm install 
+npm run dev
 ```
 
 ## Database
