@@ -1,0 +1,33 @@
+include head.pug
+block scripts
+  script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js')
+  script(src="/js/app.js")
+body
+  div.container
+    .row
+      .col-md-6
+        h3  Custom URL Shortner
+    br
+    .row
+      .col-md-6.col-sm-12
+        h4 Original Url
+        p.text-primary Ex: https://www.lazada.co.th/products/xiaomi-mi-smart-band-4-global-version-i352760662-s690552178.html?spm=a2o4m.searchlistcategory.list.1.48104e3dgUlSJd&search=1
+        input#original-url.form-control(type='text')
+    .row
+      .col-md-6.col-sm-12
+        h4 Base Url
+        p.text-primary Ex: bit.yl
+        input#short-url.form-control(type='text')
+    br
+    .row
+      .col-md-6.col-sm-12
+        button#btn-submit.btn.btn-success(type='button') Submit
+        | &nbsp;&nbsp;
+        button#btn-reset.btn.btn-success(type='button') Reset
+
+    br
+    .row
+      .col-md-6.col-sm-12
+        h3#result-title Here is your shorten url.
+        a(href="#", id="result-url", target="_blank")
+        p#result-text.text-danger

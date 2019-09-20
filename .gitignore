@@ -1,0 +1,21 @@
+# env
+.env
+
+# npm
+node_modules
+
+# ide
+.idea
+.project
+.settings
+.vscode
+typings
+
+# os
+.DS_Store
+.tern-port
+
+# nyc
+.nyc_output
+coverage
+
